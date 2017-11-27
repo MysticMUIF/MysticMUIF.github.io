@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ben Joffe">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Ben Joffe | Spirograph</title>
+<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script>
+var _gaq = [['_setAccount', 'UA-7116912-1'],['_trackPageview']];
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="BenJoffe.com - RSS 2.0 Feed" href="rss.xml">
+<link rel="stylesheet" type="text/css" href="/style/main.css?4">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="/script/lib/jquery-1.11.1.min.js"><\/script>')</script><script src="/script/lib/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/script/subscribe.js"></script>
+<script type="text/javascript" src="/script/main.js?3"></script>
+<link rel="stylesheet" type="text/css" href="/style/spirograph.css">
+<script src="/script/spirograph.js"></script>
+</head>
+<body>
+<div id="benjoffe">
+  <div id="benjoffe-inner">
+    <header class="transBg">
+      <div class="container">
+        <h1>Ben Joffe</h1>
+        <div id="intro">
+          <ul id="nav">
+            <li><a href="/">Home</a>            </li><li><a href="/code">Code</a>            </li><li><a href="/contact">Contact</a>          </li></ul>
+          <ul id="networks">
+            <li id="networks-rs"><a target="_blank" href="/rss.xml"><span>RSS Feed</span></a>
+            </li><li id="networks-tw"><a target="_blank" href="http://www.twitter.com/benjoffe"><span>Twitter</span></a>
+            </li><li id="networks-li"><a target="_blank" href="http://www.linkedin.com/in/benjoffe"><span>LinkedIn</span></a></li></ul>
+        </div>
+      </div>
+    </header>
+    <div id="content">
+      <div class="container">
+        
+<div id="loading" style="display: none;"><img src="img/loading.gif" alt="" style="width:16px;height:16px;vertical-align:top;"> Loading...</div>
+<script type="text/javascript"><!--
+    document.getElementById('loading').innerHTML = '<img src="img/loading.gif" alt="" style="width:16px;height:16px;vertical-align:top;"> Loading...';
+--></script>
+
+<div id="spirograph" style="visibility: visible;">
+    <div id="view1">
+        <canvas id="under" width="350" height="350"></canvas>
+        <canvas id="canvas" width="350" height="350"></canvas>
+
+        <div class="but" id="save"></div>
+
+        <input type="button" id="redraw" value="Redraw">
+        <select id="speed" style="display: none;">
+            <option>Pause</option>
+            <option selected="">Slow</option>
+            <option>Medium</option>
+            <option>Fast</option>
+        </select>
+        <label id="showBox" style="display: none;"><input type="checkbox" id="display" checked="">Show</label>
+    </div>
+
+    <div id="view2">
+        <div id="box1">
+            <h3>Line Style</h3>
+            <input id="calligraphy" type="checkbox"> Calligraphy pen<br>
+            <select id="thickness">
+                <option>Thin</option>
+                <option selected="">Standard</option>
+                <option>Thick</option>
+                <option>Thicker</option>
+            </select><br>
+            <select id="colourType">
+                <option>Single colour</option>
+                <option>Angle spectrum</option>
+            </select>
+        </div>
+        
+        <div id="box2">
+            <h3>Parameters</h3>
+            Static Circle: <input id="r1" type="range" min="10" max="100" value="90"><span id="outr1">90</span><br>
+            Mobile Circle: <input id="r2" type="range" min="-90" max="90" value="21"><span id="outr2">30</span><br>
+            Tracing Stick: <input id="r3" type="range" min="0" max="200" value="50"><span id="outr3">50</span><br>
+            <canvas id="example" width="200" height="150"></canvas>
+        </div>
+        
+        <div id="colourBox">
+            <div id="colourDisplay"></div>
+            <div id="colour"></div>
+            <div id="mark1"></div>
+            <div id="ring"></div>
+        </div>
+    </div>
+
+    <div class="but" id="config"></div>
+    <div id="tooltip"></div>
+    
+</div>
+      </div>
+    </div>
+    <footer id="foot">
+      <!--
+      <div id="lumo-promo">
+      </div>
+      -->
+      <div class="container">
+        <p>© 2017 Ben Joffe</p>
+      </div>
+    </footer>
+  </div>
+</div>
+
+
+</body>
+</html>
